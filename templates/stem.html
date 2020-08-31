@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+
+ <div class= "content-section" >
+      <form method ="POST" action= "">
+          {{form.hidden_tag()}}
+          <fieldset class ="form-group">
+                <legend class ="border-bottom mb-4">Enter a Tigrigna word or sentence
+              <div class="form-group">
+                  {{form.characters(class="form-control form-control-lg")}}
+              </div>
+
+                </legend>
+
+
+            </fieldset>
+            {{form.stem(class="btn btn-outline-info")}}
+       </form>
+    </div>
+
+{% endblock content %}
